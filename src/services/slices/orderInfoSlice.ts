@@ -16,7 +16,7 @@ export const initialState: TOrderInfoSliceState = {
 
 export const orderInfoThunk = createAsyncThunk(
   'orderByNumber/getOrderByNumber',
-  async (number: number) => getOrderByNumberApi(number)
+  getOrderByNumberApi
 );
 
 export const orderInfoSlice = createSlice({
